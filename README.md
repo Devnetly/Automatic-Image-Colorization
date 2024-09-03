@@ -1,0 +1,1 @@
+This is a Deep Learning academic project, throughout this project we explored state of the art deep learning techniques for automatic colorization of gray scale images. For further details check this [report.](https://github.com/Devnetly/Automatic-Image-Colorization/blob/main/docs/Report.pdf)
