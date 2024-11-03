@@ -7,6 +7,15 @@ from torch.utils.data import DataLoader
 from loss import AverageMeter
 from skimage.color import rgb2lab, lab2rgb
 import matplotlib.pyplot as plt
+from fastai.vision.learner import create_body
+from torchvision.models.resnet import resnet18
+from fastai.vision.models.unet import DynamicUnet
+
+
+def build_res_unet(n_input=1, n_output=2, size=256):
+    body = create_body(resnet18(), pretrained=True, n_in=n_input, cut=-2)
+    net_G = DynamicUnet(body, n_output, (size, size))
+    return net_G
 
 
 def init_weights(net, init='norm', gain=0.02):
