@@ -1,2 +1,0 @@
-epoch,loss_D_fake,loss_D_real,loss_D,loss_G_GAN,loss_G_L1,loss_G
-0,0.0,0.0,0.0,0.0,0.0,0.0
